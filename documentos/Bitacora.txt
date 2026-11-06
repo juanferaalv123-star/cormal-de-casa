@@ -1,0 +1,20 @@
+Colores: #33080b, #fcead1, #1b3515, #ffe930, #af1417
+Fuentes: 
+body {font-family: 'Plus Jakarta Sans', sans-serif;}
+
+h1, h2, h3 {font-family: 'Cormorant Garamond', Georgia, serif;}
+
+Plataformas usadas: 
+chatgpt
+stitch
+https://miro.com/app/board/uXjVER1TFnk=/
+
+
+Recursos inspirativos:
+https://guadalupe.cluvi.co/ (de como no hacerlo)
+https://www.lataqueriacocinamexicana.com/
+https://rinconmexicano.com.co/
+https://www.wajaca.co/
+npx skills add https://github.com/kostja94/marketing-skills --skill branding
+maquetado de referencia.html
+SKILL-Restaurante.md
