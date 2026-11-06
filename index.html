@@ -3,21 +3,94 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/output.css">
     <title>Mi Página Web</title>
   </head>
 
-  <body>
+  <body class="bg-champagne-mist-100 font-body">
 
-    <main class="flex flex-col items-center justify-center min-h-screen bg-red-100">
-      <h1 class="text-4xl font-bold mb-4">Bienvenido a mi página web</h1>
+    <main class="flex min-h-screen flex-col  text-gray-50 ">
       
-      <p class="text-lg text-gray-700">Esta es una página de ejemplo utilizando Tailwind CSS.</p>
+        <aside class="flex justify-between bg-rich-mahogany-800 p-2 items-center max-w-5xl mx-auto">
+          <article>
+              <h2 class="text-3xl font-display lg:font-artisan">Conviértete en parte de nuestra familia y disfruta varios beneficios</h2>
+              <p class="text-gray-100 sm:text-lg">Siempre hay un lugar más en la mesa. </p>
+          </article>
+          <article>
+              <a href="#" class="bg-yellow-300/95 text-black px-4 py-2 rounded-lg hover:bg-yellow-400 transition duration-300">Únete ahora</a>
+          </article>
+        </aside>
+      
+        <section class="text-center mt-10 bg-champagne-mist-100  rounded-lg shadow-md">
+          <h2 class="text-5xl font-display text-black mt-1 mb-3">Descubre nuestros sabores</h2>
+          <p class="text-black sm:text-lg">Explora nuestras diferentes categorías preparadas con ingredientes frescos y recetas ancestrales.</p>
+        
 
+          <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+          
+              <article class="relative w-65 h-60">
+                  <a href="#">
+                      <img src="Img/prueda.png" alt="Desayuno" class="w-full h-64 object-cover">
+                  </a>
+                
+                  <p class="absolute bottom-3 right-3 bg-black-forest-800 text-champagne-mist-100 px-3 py-2 rounded-lg">
+                      Entradas
+                  </p>
+              </article>
 
-    <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 active:scale-95 focus:outline-none focus:ring-4 focus:ring-purple-300 transition">
-        Comprar
-    </button>
+              <article class="relative w-65 h-60">
+                <a href="#">
+                    <img src="Img/prueda.png" alt="Almuerzo" class="w-full h-60 object-cover">
+                </a>
+              
+                  <p class="absolute bottom-3 right-3 bg-black-forest-800 text-champagne-mist-100  rounded-lg">
+                      Platos principales
+                  </p>
+              </article>
+
+              <article class="relative w-65 h-60">
+                  <a href="#">
+                      <img src="Img/prueda.png" alt="Bebidas"class="w-full h-64 object-cover">
+                  </a>
+                
+                  <p class="absolute bottom-3 right-3 bg-black-forest-800 text-champagne-mist-100 px-3 py-2 rounded-lg">
+                      Postres
+                  </p>
+              </article>
+
+              <article class="relative w-65 h-60">
+                  <a href="#">
+                      <img src="Img/prueda.png" alt="Bebidas"class="w-full h-64 object-cover">
+                  </a>
+                
+                  <p class="absolute bottom-3 right-3 bg-black-forest-800 text-champagne-mist-100 px-3 py-2 rounded-lg">
+                      Bebidas
+                  </p>
+              </article>
+              
+              <article class="relative w-65 h-60">
+                  <a href="#">
+                      <img src="Img/prueda.png" alt="Bebidas"class="w-full h-64 object-cover">
+                  </a>
+                
+                  <p class="absolute bottom-3 right-3 bg-black-forest-800 text-champagne-mist-100 px-3 py-2 rounded-lg">
+                      Cócteles y licores
+                  </p>
+              </article>
+
+              <article class="relative w-65 h-60">
+                  <a href="#">
+                      <img src="Img/prueda.png" alt="Bebidas"class="w-full h-64 object-cover">
+                  </a>
+                
+                  <p class="absolute bottom-3 right-3 bg-black-forest-800 text-champagne-mist-100 px-3 py-2 rounded-lg">
+                      Especialidades
+                  </p>
+              </article>
+
+          </section>
+        </section>
 
     </main>
     
