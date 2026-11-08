@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <title>Mi Página Web</title>
   </head>
 
-  <body>
+  <body class="min-h-screen">
 
     <header class="bg-white">
 
@@ -15,11 +15,11 @@
 
         <div class="flex flex-row align-center">
 
-          <img class="w-32" src="Img/Logo.png" alt="Logo">
+          <img class="w-25" src="Img/Logo.png" alt="Logo">
 
           <div class="flex flex-col align-middle justify-center">
-          <h2 class="text-2xl">Cormal de casa</h2>
-          <p class="text-red-500">asdddd</p>
+          <h2 class="text-2xl font-bold">Cormal de casa</h2>
+          <p class="text-red-500 font-bold">El sabor de mexico</p>
 
           </div>
 
@@ -29,15 +29,15 @@
 
           <nav class="flex flex-row">
 
-            <a class="m-2 hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Inicio</a>
+            <a class="m-2 font-bold text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Inicio</a>
 
-            <a class="m-2 hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Carta</a>
+            <a class="m-2 font-bold text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Carta</a>
             
-            <a class="m-2 hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Nosotros</a>
+            <a class="m-2 font-bold text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Nosotros</a>
             
-            <a class="m-2 hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Contactanos</a>
+            <a class="m-2 font-bold text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Contactanos</a>
             
-            <a class="m-2 hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Membresia</a>
+            <a class="m-2 font-bold text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 hover:scale-110" href="#">Membresia</a>
 
           </nav>
 
@@ -45,18 +45,29 @@
 
         <div>
 
-          <button class="bg-orange-700 p-2 rounded-2xl text-white font-bold m-3 mt-5">Pedir domicilio</button>
+          <button class="bg-orange-700 p-4 rounded-2xl text-white font-bold m-3 mt-5">Pedir domicilio</button>
 
         </div>
 
       </section>
 
     </header>
-    <main>
+    <main class="flex justify-center items-center">
 
-      <section class="flex justify-center">
-
-        <img src="Img/hero.png" alt="">
+      <section class="relative w-full min-h-[calc(100vh-5rem)] flex items-center justify-center m-4">
+        
+          <img class="rounded-2xl absolute inset-0 w-full h-full object-cover" src="Img/hero.png" alt="hero">
+        
+        <div class="rounded-2xl absolute inset-0 bg-black/50"></div>
+        <div class="relative h-full z-10 flex flex-col items-center justify-center text-white gap-5">
+          <h2 class="font-bold text-5xl">El sabor de México</h2>
+          <p class="font-bold text-5xl text-yellow-400">se siente como en casa</p>
+          <p class="text-3xl">Tradición, sabor y momentos para compartir. La mesa ya está servida.</p>
+          <div>
+          <button class="text-black bg-yellow-400  font-bold  text-2xl p-3 rounded-full">Reservar mesa</button>
+          <button class="text-2xl font-bold  border-2 p-3 rounded-full">Ver la carta</button>
+          </div>
+        </div>
 
       </section>
 
