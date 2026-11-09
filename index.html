@@ -10,27 +10,87 @@
 
   <body class="bg-champagne-mist-100 font-body text-black">
 
-    <aside class="bg-rich-mahogany-800 text-champagne-mist-100">
+    <header class="bg-white">
+
+      <section class="flex flex-row justify-around">
+
+        <div class="flex flex-row align-center">
+
+          <img class="w-25" src="Img/Logo.png" alt="Logo">
+
+          <div class="flex flex-col align-middle justify-center">
+          <h2 class="text-2xl font-display">Comal de casa</h2>
+          <p class="text-rich-mahogany-600 font-body">El sabor de mexico</p>
+
+          </div>
+
+        </div>
+
+        <div class="m-3 mt-6">
+
+          <nav class="flex flex-row">
+
+            <a class="btn-nav" href="#">Inicio</a>
+
+            <a class="btn-nav" href="#">Carta</a>
+            
+            <a class="btn-nav" href="#">Nosotros</a>
+            
+            <a class="btn-nav" href="#">Contactanos</a>
+            
+            <a class="btn-nav" href="#">Membresia</a>
+
+          </nav>
+
+        </div>
+
+        <div>
+
+          <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 mt-5 hover:bg-rich-mahogany-800/90"><a href="">Pedir domicilio</a></button>
+
+        </div>
+
+      </section>
+
+    </header>
+
+    
+
+    <main class="mx-auto   pb-16">
+
+      <section class="relative w-full min-h-[calc(100vh-5rem)] flex items-center justify-center ">
+        
+          <img class="absolute inset-0 w-full h-full object-cover" src="Img/hero.png" alt="hero">
+        
+        <div class=" absolute inset-0 bg-black/50"></div>
+        <div class="relative h-full z-10 flex flex-col items-center justify-center text-white gap-5">
+          <h2 class="font-display text-5xl">El sabor de México <strong class="text-yellow-400">se siente como en casa</strong></h2>
+          <p class="text-xl font-body">Tradición, sabor y momentos para compartir.</p>
+          <p class="text-xl font-body">La mesa ya está servida.</p>
+          <div>
+          <a href="#Reservas" class="btn">Reservar mesa</a>
+  
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="bg-rich-mahogany-800 text-champagne-mist-100">
       <div class="mx-auto flex max-w-5xl flex-col gap-6 p-6 md:flex-row md:items-center md:justify-between">
 
         <article class="md:max-w-xl">
-          <h2 class="font-display text-3xl font-bold">
+          <h2 class="font-display text-3xl">
             Conviértete en parte de nuestra familia y disfruta varios beneficios
           </h2>
           
         </article>
 
         <article>
-          <a href="#"
-             class="inline-block rounded-lg bg-bright-lemon-300 px-6 py-3 font-semibold text-black transition duration-300 hover:bg-bright-lemon-400">
-            Únete ahora
-          </a>
+          <a href="#" class="btn"> Únete ahora</a>
         </article>
 
       </div>
     </aside>
-
-    <main class="mx-auto max-w-6xl px-4 pb-16">
 
       <!-- ============ 2. CATEGORÍAS (tarjetas que giran) ============ -->
       <section class="mt-10 text-center">
@@ -40,10 +100,189 @@
         </p>
 
         <!-- Aquí JavaScript dibuja las tarjetas -->
-        <div id="categorias" class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3"></div>
+        <div id="categorias" class="mx-auto mt-8 grid max-w-4xl grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3"></div>
       </section>
 
+      <section class="bg-black-forest-800 mt-6">
+
+        <article class="max-w-6xl mx-auto p-4 bg-black-forest-800 pb-10" >
+
+          <h1 class="font-display text-3xl font-bold text-center text-white mt-3 mb-7">Disfruta México donde estés</h1>
+          
+          <div class="grid  mt-4 bg-black-forest-800">
+
+            <img src="./Img/donde_estes.jpg" alt="Imagen de mesa con comida mexicana" class="w-full  rounded-t-2xl">
+
+            <div class="grid gap-1 sm:grid-cols-2 ">
+
+              <div class="p-15 bg-champagne-mist-50 text-center">
+                <img src="./Img/domicilios.jpg" alt="Icono de entrega a domicilio" class="mx-auto mb-4 rounded-2xl h-40 ">
+                <h2 class="font-display text-2xl font-bold text-rich-mahogany-800">Domicilios</h2>
+                
+                <button class="bg-rich-mahogany-800 text-white font-display py-2 px-4 mt-4 rounded-2xl text-xl hover:bg-rich-mahogany-800/90">Pedir a domicilio</button>
+              </div>
+
+              <div id="Reservas" class="p-15 bg-champagne-mist-50 text-center">
+                <img src="./Img/reservas.jpg" alt="Icono de reservas" class="mx-auto mb-4 rounded-2xl h-40 ">
+                <h2 class="font-display text-2xl font-bold text-rich-mahogany-800">Reservas</h2>
+                
+                <button class="bg-rich-mahogany-800 text-white font-display py-2 px-4 mt-4 rounded-2xl text-xl hover:bg-rich-mahogany-800/90">Hacer reserva</button>
+              </div>
+
+            </div>
+          
+          </div>
+        </article>
+
+      </section>
+
+
+    <img src="./Img/patron_verde.jpg" alt="" class="object-cover object-right w-full h-5  ">
+
+    <section class=" max-w-6xl mx-auto justify-content text-center items-center pb-25 bg-champagne-mist-50" >
+      <h2 class="font-display text-2xl font-bold mt-15 p-6">Servicios</h2>
+
+        <article class="font-body grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-center mt-6 justify-center bg-rich-mahogany-800 gap-1" >
+          <div class="p-6 bg-champagne-mist-50">
+            <img src="./Img/pago.png" alt="Icono de entrega a domicilio" class="mx-auto mb-4 rounded-2xl h-60 w-65 ">
+            <h3 class="font-display text-2xl font-bold text-center">Multiples medios de pago</h3>  
+                  
+          </div>
+          <div class="p-6 bg-champagne-mist-50">
+            <img src="./Img/menu.png" alt="Icono de menú adaptado" class="mx-auto mb-4 rounded-2xl h-60 w-65">
+            <h3 class="font-display text-2xl font-bold text-center">Menú adaptado</h3>
+            
+          </div>
+          <div class="p-6 bg-champagne-mist-50">
+            <img src="./Img//exclusividad.png" alt="Icono de exclusividad" class="mx-auto mb-4 rounded-2xl h-60 w-65">
+            <h3 class="font-display text-2xl font-bold text-center">Exclusividad</h3>
+            
+          </div>
+          <div class="p-6 bg-champagne-mist-50">
+            <img src="./Img/estacionamiento.png" alt="Icono de estacionamiento" class="mx-auto mb-4 rounded-2xl h-60 w-65 ">
+            <h3 class="font-display text-2xl font-bold text-center">Estacionamiento</h3>
+            
+          </div>
+        </article>
+
+    </section>
+
     </main>
+    <footer class="w-full bg-rich-mahogany-800">
+
+      <!-- Línea decorativa superior -->
+      <aside class="w-full h-5 overflow-hidden">
+          <img 
+              src="Img/patron_verde.jpg" 
+              alt=""
+              class="w-full h-full object-cover"
+          >
+      </aside>
+
+      <!-- Contenido del footer -->
+      <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+          <!-- Logo y marca -->
+          <article class="flex ">
+            <div>
+              <img
+                src="Img/Logo.png" alt="Logo del restaurante" class="w-28 h-28 object-contain"
+              >
+            </div>
+
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+              <h2 class="font-display text-4xl text-white">
+                Comal De Casa
+              </h2>
+              <p class="text-sm tracking-widest uppercase text-white">
+                Sabor mexicano
+              </p>
+              <p class=" font-body mt-4 max-w-xs text-sm leading-relaxed text-white">
+                Disfruta del auténtico sabor mexicano,
+               preparado con ingredientes frescos y
+                mucho amor por nuestra tradición.
+              </p>
+               
+            </div>
+          </article>
+
+          <!-- Navegación -->
+          <article class="text-center md:text-left text-white">
+
+            <h3 class="font-display text-2xl mb-5 text-white">
+                Explora
+            </h3>
+
+            <ul class="space-y-3 text-sm">
+              <li>
+                  <a href="index.html" class="hover:text-black-forest-800 transition-colors">
+                      Inicio
+                  </a>
+              </li>
+              <li>
+                  <a href="#menu" class="hover:text-black-forest-800 transition-colors">
+                      Nuestro menú
+                  </a>
+              </li>
+              <li>
+                  <a href="#especiales" class="hover:text-black-forest-800 transition-colors">
+                      Especiales y novedades
+                  </a>
+              </li>
+              <li>
+                  <a href="#reservas" class="hover:text-black-forest-800 transition-colors">
+                      Reservaciones
+                  </a>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Contacto -->
+          <article class="text-center md:text-left">
+
+            <h3 class="font-display text-2xl font-bold mb-5 text-white">
+              Contáctanos
+            </h3>
+            <ul class="space-y-4 text-sm text-white">
+              <li class="flex items-center justify-center md:justify-start gap-3">
+                  <span class="text-black-forest-800">✉</span>
+                  contacto@cormaldecasa.com
+              </li>
+              <li class="flex items-center justify-center md:justify-start gap-3">
+                  <span class="text-black-forest-800">☎</span>
+                  +57 300 000 0000
+              </li>
+              <li class="flex items-center justify-center md:justify-start gap-3">
+                  <span class="text-black-forest-800">⌖</span>
+                  Medellín, Colombia
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Separador inferior -->
+        <section class="border-t border-[#F6F1E5]/20 mt-12 pt-6">
+
+            <article class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-xs text-white text-center">
+                    © 2026 Cormal De Casa. Todos los derechos reservados.
+                </p>
+
+                <p class="text-xs text-white font-semibold">
+                    Hecho con sabor mexicano 🌮
+                </p>
+
+            </article>
+
+        </section>
+
+      </div>
+
+    </footer>
+
     <script>
       // =====================================================
       // 1) LOS DATOS: una categoría por cada { }.
@@ -98,7 +337,7 @@
       //    Toda la tarjeta es un enlace (<a>) hacia su propia página.
       categorias.forEach(function (categoria) {
         contenedorTarjetas.innerHTML += `
-          <a href="${categoria.enlace}" class="tarjeta group block h-64 perspective-distant">
+          <a href="${categoria.enlace}" class="tarjeta group block h-44 perspective-distant">
 
             <!-- "interior" es la pieza que gira -->
             <div class="interior relative h-full w-full transform-3d transition-transform duration-700 group-hover:rotate-y-180 group-focus-visible:rotate-y-180">
@@ -106,15 +345,15 @@
               <!-- Cara de adelante: imagen + nombre -->
               <div class="absolute inset-0 overflow-hidden rounded-lg shadow-md backface-hidden">
                 <img src="${categoria.imagen}" alt="${categoria.nombre}" class="h-full w-full object-cover">
-                <p class="absolute bottom-3 right-3 rounded-lg bg-black-forest-800 px-3 py-2 text-champagne-mist-100">
+                <p class="absolute bottom-2 right-2 rounded-lg bg-black-forest-800 px-2 py-1 text-sm text-white">
                   ${categoria.nombre}
                 </p>
               </div>
 
               <!-- Cara de atrás: explicación + "Ver más" -->
-              <div class="absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-lg bg-black-forest-800 p-6 text-center text-champagne-mist-100 shadow-md backface-hidden rotate-y-180">
-                <p class="text-lg">${categoria.descripcion}</p>
-                <span class="rounded-lg bg-bright-lemon-300 px-4 py-2 font-semibold text-black">Ver más</span>
+              <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-lg bg-black-forest-800 p-3 text-center text-champagne-mist-100 shadow-md backface-hidden rotate-y-180">
+              <p class="text-sm">${categoria.descripcion}</p>
+              <span class="btn text-sm! p-2!">Ver más</span>
               </div>
 
             </div>
@@ -141,14 +380,10 @@
 
       // =====================================================
       // 5) ESPACIO PARA CÓDIGO FUTURO
-      //    Escribe aquí lo nuevo que quieras agregar
-      //    (por ejemplo: menú móvil, filtros, animaciones...).
-      //    Así queda separado de lo anterior y es fácil de encontrar.
       // =====================================================
 
 
+
     </script>
-    
-    
   </body>
 </html>
