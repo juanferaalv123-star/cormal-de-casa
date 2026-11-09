@@ -1,1 +1,79 @@
 @import "tailwindcss";
+
+@theme {
+    --font-display: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+ 
+    --color-rich-mahogany-50: #fce9ea;
+    --color-rich-mahogany-100: #f8d3d5;
+    --color-rich-mahogany-200: #f1a7ac;
+    --color-rich-mahogany-300: #ea7b82;
+    --color-rich-mahogany-400: #e34f58;
+    --color-rich-mahogany-500: #dd222f;
+    --color-rich-mahogany-600: #b01c25;
+    --color-rich-mahogany-700: #84151c;
+    --color-rich-mahogany-800: #470B0E;
+    --color-rich-mahogany-900: #580e13;
+    --color-rich-mahogany-950: #2c0709;
+    
+    --color-champagne-mist-50: #fce9ea;
+    --color-champagne-mist-100: #FCE3C5;
+    --color-champagne-mist-200: #f9d39f;
+    --color-champagne-mist-300: #f6be6f;
+    --color-champagne-mist-400: #f3a83f;
+    --color-champagne-mist-500: #f0920f;
+    --color-champagne-mist-600: #c0750c;
+    --color-champagne-mist-700: #905809;
+    --color-champagne-mist-800: #603a06;
+    --color-champagne-mist-900: #301d03;
+    --color-champagne-mist-950: #221402;
+
+    --color-black-forest-50: #eff8ed;
+    --color-black-forest-100: #dff0db;
+    --color-black-forest-200: #bee2b6;
+    --color-black-forest-300: #9ed392;
+    --color-black-forest-400: #7dc56d;
+    --color-black-forest-500: #5db649;
+    --color-black-forest-600: #4a923a;
+    --color-black-forest-700: #386d2c;
+    --color-black-forest-800: #1B3515;
+    --color-black-forest-900: #13240f;
+    --color-black-forest-950: #0d1a0a;
+
+    --color-bright-lemon-50: #fffce5;
+    --color-bright-lemon-100: #fffacc;
+    --color-bright-lemon-200: #fff599;
+    --color-bright-lemon-300: #fff066;
+    --color-bright-lemon-400: #ffeb33;
+    --color-bright-lemon-500: #ffe500;
+    --color-bright-lemon-600: #ccb800;
+    --color-bright-lemon-700: #998a00;
+    --color-bright-lemon-800: #665c00;
+    --color-bright-lemon-900: #332e00;
+    --color-bright-lemon-950: #242000;
+
+    --color-deep-navy-50: #e9eafc;
+    --color-deep-navy-100: #d3d5f8;
+    --color-deep-navy-200: #a7acf1;
+    --color-deep-navy-300: #7b82ea;
+    --color-deep-navy-400: #4f58e3;
+    --color-deep-navy-500: #222fdd;
+    --color-deep-navy-600: #1c25b0;
+    --color-deep-navy-700: #151c84;
+    --color-deep-navy-800: #0e1358;
+    --color-deep-navy-900: #07092c;
+    --color-deep-navy-950: #05071f;
+}
+
+@layer components {
+  .btn {
+    @apply text-lg font-body border-2 p-3 rounded-full transition duration-300
+           hover:bg-bright-lemon-300 hover:border-transparent hover:text-black;
+  }
+
+  .btn-nav {
+    @apply m-2 font-body text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 
+            hover:scale-110;
+  }
+}
+ 
