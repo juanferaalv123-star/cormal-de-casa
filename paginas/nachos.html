@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/output.css">
+    
+    <title>Nachos — Comal de casa</title>
+  </head>
+<body class="bg-champagne-mist-100 font-body text-black">
+    <svg class="absolute size-0" aria-hidden="true" focusable="false">
+  <symbol id="icono-vegano" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+    <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+  </symbol>
+  <symbol id="icono-sin-gluten" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 21V8"/>
+    <path d="M12 8c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4Z"/>
+    <path d="M12 8c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4Z"/>
+    <path d="M12 14c-2.5 0-4-1.5-4-4 2.5 0 4 1.5 4 4Z"/>
+    <path d="M12 14c2.5 0 4-1.5 4-4-2.5 0-4 1.5-4 4Z"/>
+    <path d="M4 20 20 4"/>
+  </symbol>
+  <symbol id="icono-alergias" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+    <path d="m9 12 2 2 4-4"/>
+  </symbol>
+</svg>
+    <header class="bg-white">
+
+      <section class="flex flex-row justify-around">
+
+        <div class="flex flex-row align-center">
+
+          <img class="w-25" src="../Img/Logo.png" alt="Logo">
+
+          <div class="flex flex-col align-middle justify-center">
+          <h2 class="text-2xl font-display">Comal de casa</h2>
+          <p class="text-rich-mahogany-600 font-body">El sabor de mexico</p>
+
+          </div>
+
+        </div>
+
+        <div class="m-3 mt-6">
+
+          <nav class="flex flex-row">
+
+            <a class="btn-nav" href="../index.html">Inicio</a>
+
+            <a class="btn-nav" href="../index.html#menu">Carta</a>
+            
+            <a class="btn-nav" href="#">Nosotros</a>
+            
+            <a class="btn-nav" href="#">Contactanos</a>
+            
+            <a class="btn-nav" href="#">Membresia</a>
+
+          </nav>
+
+        </div>
+
+        <div>
+
+          <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 mt-5 hover:bg-rich-mahogany-800/90"><a href="">Pedir domicilio</a></button>
+
+        </div>
+
+      </section>
+
+    </header>
+    <main class="pb-16">
+
+      <section class="relative flex min-h-[calc(100vh-5rem)] w-full items-end justify-start">
+
+        <img class="absolute inset-0 h-full w-full object-cover" src="../Img/carta/nachos.jpg" alt="Nachos" decoding="async">
+
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex flex-col items-start gap-2 p-6 text-white md:p-12">
+          <p class="text-base font-body">Crujientes y llenos de sabor.</p>
+          <h1 class="font-display text-tl-tj">Nachos</h1>
+        </div>
+
+      </section>
+
+      <nav aria-label="Migas de pan" class="border-b border-champagne-mist-100/20 bg-rich-mahogany-800/90 backdrop-blur-md">
+        <ol class="mx-auto flex max-w-295 flex-wrap items-center gap-2 px-[clamp(1rem,4vw,3rem)] py-3.5 text-xs tracking-[0.18em] uppercase [&>li+li]:before:mr-2 [&>li+li]:before:text-[10px] [&>li+li]:before:text-champagne-mist-100/40 [&>li+li]:before:content-['/']">
+          <li>
+            <a href="../index.html#hero" class="text-champagne-mist-100/75 transition-colors hover:text-champagne-mist-50">Inicio</a>
+          </li>
+          <li>
+            <a href="../index.html#menu" class="text-champagne-mist-100/75 transition-colors hover:text-champagne-mist-50">Menú</a>
+          </li>
+          <li>
+            <span aria-current="page" class="text-champagne-mist-50">Nachos</span>
+          </li>
+        </ol>
+      </nav>
+
+      <section id="platos" aria-labelledby="titulo-platos" class="mx-auto mt-10 max-w-6xl px-4">
+        <h2 id="titulo-platos" class="sr-only">Platos de Nachos</h2>
+        <ul class="mt-8 grid grid-cols-1 gap-4 text-left sm:grid-cols-2 lg:grid-cols-6 lg:[&>li:last-child:nth-child(3n+1)]:col-start-3 lg:[&>li:nth-last-child(2):nth-child(3n+1)]:col-start-2 sm:max-lg:[&>li:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>li:last-child:nth-child(odd)]:w-[calc(50%-0.5rem)] sm:max-lg:[&>li:last-child:nth-child(odd)]:justify-self-center">
+
+          <li class="lg:col-span-2">
+            <article tabindex="0" class="group aspect-4/3 perspective-distant outline-none focus-visible:ring-2 focus-visible:ring-rich-mahogany-800 focus-visible:ring-offset-2">
+              <div class="relative size-full transform-3d transition-transform duration-700 group-hover:rotate-y-180 group-focus-within:rotate-y-180">
+
+                <!-- FRENTE -->
+                <div class="absolute inset-0 overflow-hidden border-t-4 border-rich-mahogany-600 shadow-md backface-hidden">
+                  <img src="../Img/Menus/Nachos/Nachos-Casa.jpg" alt="Nachos de la casa" loading="lazy" decoding="async"
+                       class="absolute inset-0 size-full object-cover">
+                  <div class="absolute inset-0 bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent"></div>
+
+                  <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+                    <div>
+                      <h3 class="font-display text-lg leading-tight font-semibold text-champagne-mist-50">Nachos de la casa</h3>
+                      <p class="mt-1 font-display text-lg font-bold text-champagne-mist-400">$36.900</p>
+                    </div>
+                    <span class="font-body text-xs tracking-[0.2em] text-champagne-mist-100 uppercase" aria-hidden="true">Ver detalle ›</span>
+                  </div>
+                </div>
+
+                <!-- REVERSO -->
+                <div class="absolute inset-0 flex flex-col justify-end overflow-hidden border border-t-4 border-rich-mahogany-200 border-t-rich-mahogany-600 bg-champagne-mist-100 p-5 shadow-md backface-hidden rotate-y-180">
+                  <ul class="absolute top-3 left-3 flex gap-1.5">
+                    <li title="Sin gluten" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-champagne-mist-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-sin-gluten"/></svg>
+                      <span class="sr-only">Sin gluten</span>
+                    </li>
+                    <li title="Modificable por alergias" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-rich-mahogany-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-alergias"/></svg>
+                      <span class="sr-only">Se puede modificar por alergias</span>
+                    </li>
+                  </ul>
+
+                  <p class="font-display text-xl font-bold text-black">$36.900</p>
+                  <p class="font-display text-2xl font-bold text-rich-mahogany-600">Nachos de la casa</p>
+                  <p class="mt-2 line-clamp-4 font-body text-sm leading-relaxed text-black/80">
+                    Totopos con queso cheddar fundido, frijol refrito, guacamole, pico de gallo, jalapeños y crema.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+          </li>
+          <li class="lg:col-span-2">
+            <article tabindex="0" class="group aspect-4/3 perspective-distant outline-none focus-visible:ring-2 focus-visible:ring-rich-mahogany-800 focus-visible:ring-offset-2">
+              <div class="relative size-full transform-3d transition-transform duration-700 group-hover:rotate-y-180 group-focus-within:rotate-y-180">
+
+                <!-- FRENTE -->
+                <div class="absolute inset-0 overflow-hidden border-t-4 border-rich-mahogany-600 shadow-md backface-hidden">
+                  <img src="../Img/Menus/Nachos/Nachos-Carne-Asada.jpg" alt="Nachos de carne asada" loading="lazy" decoding="async"
+                       class="absolute inset-0 size-full object-cover">
+                  <div class="absolute inset-0 bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent"></div>
+
+                  <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+                    <div>
+                      <h3 class="font-display text-lg leading-tight font-semibold text-champagne-mist-50">Nachos de carne asada</h3>
+                      <p class="mt-1 font-display text-lg font-bold text-champagne-mist-400">$46.900</p>
+                    </div>
+                    <span class="font-body text-xs tracking-[0.2em] text-champagne-mist-100 uppercase" aria-hidden="true">Ver detalle ›</span>
+                  </div>
+                </div>
+
+                <!-- REVERSO -->
+                <div class="absolute inset-0 flex flex-col justify-end overflow-hidden border border-t-4 border-rich-mahogany-200 border-t-rich-mahogany-600 bg-champagne-mist-100 p-5 shadow-md backface-hidden rotate-y-180">
+                  <ul class="absolute top-3 left-3 flex gap-1.5">
+                    <li title="Sin gluten" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-champagne-mist-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-sin-gluten"/></svg>
+                      <span class="sr-only">Sin gluten</span>
+                    </li>
+                    <li title="Modificable por alergias" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-rich-mahogany-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-alergias"/></svg>
+                      <span class="sr-only">Se puede modificar por alergias</span>
+                    </li>
+                  </ul>
+
+                  <p class="font-display text-xl font-bold text-black">$46.900</p>
+                  <p class="font-display text-2xl font-bold text-rich-mahogany-600">Nachos de carne asada</p>
+                  <p class="mt-2 line-clamp-4 font-body text-sm leading-relaxed text-black/80">
+                    Totopos con res asada, queso gratinado, frijoles, aguacate y cebolla encurtida.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+          </li>
+          <li class="lg:col-span-2">
+            <article tabindex="0" class="group aspect-4/3 perspective-distant outline-none focus-visible:ring-2 focus-visible:ring-rich-mahogany-800 focus-visible:ring-offset-2">
+              <div class="relative size-full transform-3d transition-transform duration-700 group-hover:rotate-y-180 group-focus-within:rotate-y-180">
+
+                <!-- FRENTE -->
+                <div class="absolute inset-0 overflow-hidden border-t-4 border-rich-mahogany-600 shadow-md backface-hidden">
+                  <img src="../Img/Menus/Nachos/Nachos-Pollo-Chipotle.jpg" alt="Nachos de pollo chipotle" loading="lazy" decoding="async"
+                       class="absolute inset-0 size-full object-cover">
+                  <div class="absolute inset-0 bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent"></div>
+
+                  <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+                    <div>
+                      <h3 class="font-display text-lg leading-tight font-semibold text-champagne-mist-50">Nachos de pollo chipotle</h3>
+                      <p class="mt-1 font-display text-lg font-bold text-champagne-mist-400">$42.900</p>
+                    </div>
+                    <span class="font-body text-xs tracking-[0.2em] text-champagne-mist-100 uppercase" aria-hidden="true">Ver detalle ›</span>
+                  </div>
+                </div>
+
+                <!-- REVERSO -->
+                <div class="absolute inset-0 flex flex-col justify-end overflow-hidden border border-t-4 border-rich-mahogany-200 border-t-rich-mahogany-600 bg-champagne-mist-100 p-5 shadow-md backface-hidden rotate-y-180">
+                  <ul class="absolute top-3 left-3 flex gap-1.5">
+                    <li title="Sin gluten" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-champagne-mist-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-sin-gluten"/></svg>
+                      <span class="sr-only">Sin gluten</span>
+                    </li>
+                    <li title="Modificable por alergias" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-rich-mahogany-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-alergias"/></svg>
+                      <span class="sr-only">Se puede modificar por alergias</span>
+                    </li>
+                  </ul>
+
+                  <p class="font-display text-xl font-bold text-black">$42.900</p>
+                  <p class="font-display text-2xl font-bold text-rich-mahogany-600">Nachos de pollo chipotle</p>
+                  <p class="mt-2 line-clamp-4 font-body text-sm leading-relaxed text-black/80">
+                    Totopos con pollo deshebrado en chipotle, queso gratinado, frijoles, pico de gallo y crema.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+          </li>
+          <li class="lg:col-span-2">
+            <article tabindex="0" class="group aspect-4/3 perspective-distant outline-none focus-visible:ring-2 focus-visible:ring-rich-mahogany-800 focus-visible:ring-offset-2">
+              <div class="relative size-full transform-3d transition-transform duration-700 group-hover:rotate-y-180 group-focus-within:rotate-y-180">
+
+                <!-- FRENTE -->
+                <div class="absolute inset-0 overflow-hidden border-t-4 border-rich-mahogany-600 shadow-md backface-hidden">
+                  <img src="../Img/Menus/Nachos/Nachos-Veganos.jpg" alt="Nachos veganos" loading="lazy" decoding="async"
+                       class="absolute inset-0 size-full object-cover">
+                  <div class="absolute inset-0 bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent"></div>
+
+                  <div class="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+                    <div>
+                      <h3 class="font-display text-lg leading-tight font-semibold text-champagne-mist-50">Nachos veganos</h3>
+                      <p class="mt-1 font-display text-lg font-bold text-champagne-mist-400">$31.900</p>
+                    </div>
+                    <span class="font-body text-xs tracking-[0.2em] text-champagne-mist-100 uppercase" aria-hidden="true">Ver detalle ›</span>
+                  </div>
+                </div>
+
+                <!-- REVERSO -->
+                <div class="absolute inset-0 flex flex-col justify-end overflow-hidden border border-t-4 border-rich-mahogany-200 border-t-rich-mahogany-600 bg-champagne-mist-100 p-5 shadow-md backface-hidden rotate-y-180">
+                  <ul class="absolute top-3 left-3 flex gap-1.5">
+                    <li title="Vegano" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-black-forest-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-vegano"/></svg>
+                      <span class="sr-only">Vegano</span>
+                    </li>
+                    <li title="Sin gluten" class="grid size-8 place-items-center rounded-full bg-champagne-mist-50/90 text-champagne-mist-700">
+                      <svg class="size-5" aria-hidden="true"><use href="#icono-sin-gluten"/></svg>
+                      <span class="sr-only">Sin gluten</span>
+                    </li>
+                  </ul>
+
+                  <p class="font-display text-xl font-bold text-black">$31.900</p>
+                  <p class="font-display text-2xl font-bold text-rich-mahogany-600">Nachos veganos</p>
+                  <p class="mt-2 line-clamp-4 font-body text-sm leading-relaxed text-black/80">
+                    Totopos con frijol negro, guacamole, pico de gallo, jalapeños y salsa de chile. Sin lácteos.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </section>
+
+      <aside aria-label="Leyenda de íconos" class="mx-auto mt-10 max-w-6xl px-4">
+        <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-black/70">
+          <li class="flex items-center gap-2">
+            <svg class="size-5 text-black-forest-700" aria-hidden="true"><use href="#icono-vegano"/></svg>
+            Vegano
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="size-5 text-champagne-mist-700" aria-hidden="true"><use href="#icono-sin-gluten"/></svg>
+            Sin gluten
+          </li>
+          <li class="flex items-center gap-2">
+            <svg class="size-5 text-rich-mahogany-700" aria-hidden="true"><use href="#icono-alergias"/></svg>
+            Modificable por alergias
+          </li>
+        </ul>
+      </aside>
+
+    </main>
+
+    <footer class="w-full bg-rich-mahogany-800">
+
+      <!-- Línea decorativa superior -->
+      <aside class="w-full h-5 overflow-hidden">
+          <img 
+              src="../Img/patron_verde.jpg" 
+              alt=""
+              class="w-full h-full object-cover"
+          >
+      </aside>
+
+      <!-- Contenido del footer -->
+      <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+          <!-- Logo y marca -->
+          <article class="flex ">
+            <div>
+              <img
+                src="../Img/Logo.png" alt="Logo del restaurante" class="w-28 h-28 object-contain"
+              >
+            </div>
+
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+              <h2 class="font-display text-4xl text-white">
+                Comal De Casa
+              </h2>
+              <p class="text-sm tracking-widest uppercase text-white">
+                Sabor mexicano
+              </p>
+              <p class=" font-body mt-4 max-w-xs text-sm leading-relaxed text-white">
+                Disfruta del auténtico sabor mexicano,
+               preparado con ingredientes frescos y
+                mucho amor por nuestra tradición.
+              </p>
+               
+            </div>
+          </article>
+
+          <!-- Navegación -->
+          <article class="text-center md:text-left text-white">
+
+            <h3 class="font-display text-2xl mb-5 text-white">
+                Explora
+            </h3>
+
+            <ul class="space-y-3 text-sm">
+              <li>
+                  <a href="../index.html" class="hover:text-black-forest-800 transition-colors">
+                      Inicio
+                  </a>
+              </li>
+              <li>
+                  <a href="../index.html#menu" class="hover:text-black-forest-800 transition-colors">
+                      Nuestro menú
+                  </a>
+              </li>
+              <li>
+                  <a href="../index.html#especiales" class="hover:text-black-forest-800 transition-colors">
+                      Especiales y novedades
+                  </a>
+              </li>
+              <li>
+                  <a href="../index.html#Reservas" class="hover:text-black-forest-800 transition-colors">
+                      Reservaciones
+                  </a>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Contacto -->
+          <article class="text-center md:text-left">
+
+            <h3 class="font-display text-2xl font-bold mb-5 text-white">
+              Contáctanos
+            </h3>
+            <ul class="space-y-4 text-sm text-white">
+              <li class="flex items-center justify-center md:justify-start gap-3">
+                  <span class="text-black-forest-800">✉</span>
+                  contacto@cormaldecasa.com
+              </li>
+              <li class="flex items-center justify-center md:justify-start gap-3">
+                  <span class="text-black-forest-800">☎</span>
+                  +57 300 000 0000
+              </li>
+              <li class="flex items-center justify-center md:justify-start gap-3">
+                  <span class="text-black-forest-800">⌖</span>
+                  Medellín, Colombia
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Separador inferior -->
+        <section class="border-t border-[#F6F1E5]/20 mt-12 pt-6">
+
+            <article class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-xs text-white text-center">
+                    © 2026 Comal De Casa. Todos los derechos reservados.
+                </p>
+
+                <p class="text-xs text-white font-semibold">
+                    Hecho con sabor mexicano 🌮
+                </p>
+
+            </article>
+
+        </section>
+
+      </div>
+
+    </footer>
+    
+</body>
+</html>
