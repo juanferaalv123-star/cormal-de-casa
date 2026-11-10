@@ -3,6 +3,8 @@
 @theme {
     --font-display: "Cormorant Garamond", Georgia, serif;
     --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
+
+    --text-tl-tj: clamp(3rem, 8vw, 6rem);
  
     --color-rich-mahogany-50: #fce9ea;
     --color-rich-mahogany-100: #f8d3d5;
@@ -74,6 +76,11 @@
   .btn-nav {
     @apply m-2 font-body text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 
             hover:scale-110;
+  }
+
+  .btn-menu {
+    @apply text-lg font-body border-2 p-3 rounded-full transition duration-300
+           hover:bg-bright-lemon-300 hover:border-transparent hover:text-black;
   }
 }
  

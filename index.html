@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <title>Mi Página Web</title>
   </head>
 
-  <body class="bg-champagne-mist-100 font-body text-black">
+  <body class="bg-v font-body text-black">
 
     <header class="bg-white">
 
@@ -56,9 +56,9 @@
 
     
 
-    <main class="mx-auto   pb-16">
+    <main class="mx-auto bg-champagne-mist-100  pb-16">
 
-      <section class="relative w-full min-h-[calc(100vh-5rem)] flex items-center justify-center ">
+      <section id="hero" class="relative w-full min-h-[calc(100vh-5rem)] flex items-center justify-center ">
         
           <img class="absolute inset-0 w-full h-full object-cover" src="Img/hero.png" alt="hero">
         
@@ -92,16 +92,132 @@
       </div>
     </aside>
 
-      <!-- ============ 2. CATEGORÍAS (tarjetas que giran) ============ -->
-      <section class="mt-10 text-center">
+      <!-- ============ 2.MENU ============ -->
+      <section id="menu" class="mt-10 text-center">
         <h2 class="font-display text-5xl font-bold">Descubre nuestros sabores</h2>
         <p class="mx-auto mt-3 max-w-2xl sm:text-lg">
           Explora nuestras diferentes categorías preparadas con ingredientes frescos y recetas ancestrales.
         </p>
+        <section aria-labelledby="titulo-carta" class="bg-champagne-mist-100">
+        
 
-        <!-- Aquí JavaScript dibuja las tarjetas -->
-        <div id="categorias" class="mx-auto mt-8 grid max-w-4xl grid-cols-1 gap-4 px-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+          <ul class="mt-8 grid grid-cols-2 lg:grid-cols-3 lg:[&>li:last-child:nth-child(3n+1)]:col-start-2">
+            <li>
+              <a href="paginas/entradas.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/entradas.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Entradas</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/tacos.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/tacos.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Tacos</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/para-compartir.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/para-compartir.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Para Compartir</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/sopas-y-cremas.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/sopas-y-cremas.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Sopas y cremas</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/burros-y-quesadillas.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/burros.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Burros y quesadillas</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/nachos.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/nachos.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Nachos</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/postres.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/postres.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Postres</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/ensaladas.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/ensaladas.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Ensaladas</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/bebidas.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/bebidas.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Bebidas</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="paginas/cocteles-licores.html" class="group relative block aspect-4/3 overflow-hidden">
+                <img src="Img/carta/cocteles-licores.jpg"
+                     alt="" loading="lazy" decoding="async"
+                     class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-rich-mahogany-950/90 via-rich-mahogany-950/10 via-60% to-transparent p-5 pb-8 pl-8">
+                  <h3 class="mb-1.5 font-display text-[clamp(15px,1.6vw,19px)] leading-[1.1] font-semibold text-champagne-mist-50">Cocteles & Licores</h3>
+                  <span class="font-body text-xs tracking-[0.2em] uppercase text-champagne-mist-400">Explorar →</span>
+                </div>
+              </a>
+            
+          </ul>
+        </section>
+
+        
       </section>
+      
 
       <section class="bg-black-forest-800 mt-6">
 
