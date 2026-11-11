@@ -68,7 +68,7 @@
 @layer components {
   .btn {
     @apply text-lg font-body border-2 p-3 rounded-full transition duration-300
-           hover:bg-bright-lemon-300 hover:border-transparent hover:text-black;
+         hover:bg-bright-lemon-300 hover:border-transparent hover:text-black;
   }
 
   .btn-nav {
@@ -76,4 +76,100 @@
             hover:scale-110;
   }
 }
+
+#intro {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: #470B0E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+}
+
+#taco {
+    font-size: 6rem;
+    user-select: none;
+}
+
+#introText {
+    font-family: var(--font-display, serif);
+    font-size: 2.5rem;
+    color: #F6F1E5;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#explosion {
+    position: relative;
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#explosion span {
+    position: absolute;
+    font-size: 2rem;
+    animation: detonar 0.9s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes detonar {
+    0% {
+        transform: translate(0, 0) scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(var(--x), var(--y)) scale(1.5);
+        opacity: 0;
+    }
+}
+
+.temblar {
+    animation: temblorTaco 0.3s ease-in-out infinite;
+}
+
+@keyframes temblorTaco {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-12deg) scale(1.05); }
+    75% { transform: rotate(12deg) scale(1.05); }
+}
+
+.campo {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #533E3A; /* Tono armónico con tu diseño */
+        border: 1px solid #f6be6f;
+        color: #F6F1E5;
+        outline: none;
+        transition: border-color 0.3s;
+    }
+    .campo:focus {
+        border-color: #ffeb33;
+    }
+    .campo::placeholder {
+        color: #d1c7bd;
+    }
+    
+    .talavera {
+        width: 100%;
+        height: 1rem;
+        background-image: url('../Img/patron_verde.jpg');
+        background-size: cover;
+    }
+
+    .boton-reservar {
+        background-color: #ffeb33;
+        color: #470B0E;
+        font-weight: bold;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    .boton-reservar:hover {
+        background-color: #ffe500;
+        transform: translateY(-2px);
+    }
  
