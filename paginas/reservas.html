@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservaciones | Cormal De Casa</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../src/input.css">
+    <link rel="stylesheet" href="../src/output.css">
+    
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+</head>
+
+<body class="bg-champagne-mist-100">
+
+    
+    <!-- ANIMACIÓN DE BIENVENIDA -->
+    <div id="intro">
+
+        <div id="taco">🌮</div>
+
+        <div id="explosion">
+            <span>✨</span>
+            <span>🌶️</span>
+            <span>💥</span>
+            <span>🧀</span>
+            <span>✨</span>
+            <span>🌶️</span>
+            <span>💥</span>
+            <span>🧅</span>
+        </div>
+
+        <h1 id="introText">
+            ¡Prepara tu apetito!
+        </h1>
+
+    </div>
+<!-- FIN DE LA ANIMACIÓN -->
+
+
+    <!-- ENCABEZADO -->
+    <header class="bg-[#470B0E] text-[#F6F1E5] px-6 py-5">
+
+        <nav class="max-w-6xl mx-auto flex justify-between items-center">
+
+            <a href="index.html"
+               class="text-2xl font-bold"
+               style="font-family: var(--font-display);">
+                Cormal De Casa
+            </a>
+
+            <div class="flex gap-6 items-center text-sm">
+                <a href="index.html" class="hover:text-green-300">
+                    Inicio
+                </a>
+
+                <a href="menu.html" class="hover:text-green-300">
+                    Carta
+                </a>
+
+                <a href="reservas.html"
+                   class="text-green-200 font-semibold">
+                    Reservar
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="w-full h-5 overflow-hidden">
+        <img 
+            src="../Img/patron_verde.jpg" 
+            alt=""
+            class="w-full h-full object-cover"
+        >
+    </div>
+
+
+   
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-6xl mx-auto px-6 py-16 ">
+
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+            <!-- INFORMACIÓN -->
+            <div class="pt-4">
+
+                <p class="text-sm font-semibold mb-4"
+                   style="color: #905809;">
+                    TU MESA TE ESPERA
+                </p>
+
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Una mesa preparada para ti.
+                </h1>
+
+                <p class="text-base leading-relaxed mb-10"
+                   style="color: #603a06;">
+                    Reserva tu lugar y disfruta de una cocina
+                    que celebra los ingredientes, las técnicas
+                    y los sabores de México.
+                </p>
+
+                <div class="border-t border-[#f3a83f] pt-6">
+
+                    <h2 class="text-3xl font-semibold mb-5">
+                        Información del restaurante
+                    </h2>
+
+                    <div class="space-y-5 text-sm">
+
+                        <div>
+                            <p class="font-bold mb-1">Horario</p>
+                            <p>Lunes a domingo: [Horario de atención]</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-1">Dirección</p>
+                            <p>[Dirección del restaurante]</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold mb-1">Contacto</p>
+                            <p>[Número de teléfono]</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULARIO -->
+            <div class="bg-black-forest-800 border border-[#f6be6f]">
+
+                <div class="talavera"></div>
+
+                <div class="p-6 md:p-9">
+
+                    <h2 class="text-4xl font-bold mb-2 text-[#F6F1E5]">
+                        Reservar mesa
+                    </h2>
+
+                    <p class="text-sm mb-8"
+                       style="color: #F6F1E5;">
+                        Completa los siguientes datos para solicitar
+                        tu reservación.
+                    </p>
+
+
+                    <form id="formReserva" class="space-y-5 text-[#F6F1E5]">
+
+                        <!-- Nombre -->
+                        <div>
+                            <label for="nombre"
+                                  class="block text-sm font-semibold mb-2">
+                                Nombre completo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nombre"
+                                class="campo"
+                                placeholder="Tu nombre"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Correo -->
+                        <div>
+                            <label for="correo"
+                                   class="block text-sm font-semibold mb-2">
+                                Correo electrónico
+                            </label>
+
+                            <input
+                                type="email"
+                                id="correo"
+                                class="campo"
+                                placeholder="ejemplo@correo.com"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Teléfono -->
+                        <div>
+                            <label for="telefono"
+                                   class="block text-sm font-semibold mb-2">
+                                Número de teléfono
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telefono"
+                                class="campo"
+                                placeholder="Tu número de contacto"
+                                required
+                            >
+                        </div>
+
+
+                        <!-- Fecha y hora -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+                            <div>
+                                <label for="fecha"
+                                       class="block text-sm font-semibold mb-2">
+                                    Fecha
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="fecha"
+                                    class="campo"
+                                    required
+                                >
+                            </div>
+
+                            <div>
+                                <label for="hora"
+                                       class="block text-sm font-semibold mb-2">
+                                    Hora
+                                </label>
+
+                                <select id="hora" class="campo" required>
+                                    <option value="">Seleccionar</option>
+                                    <option>12:00</option>
+                                    <option>13:00</option>
+                                    <option>14:00</option>
+                                    <option>15:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                    <option>21:00</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Personas -->
+                        <div>
+                            <label for="personas"
+                                   class="block text-sm font-semibold mb-2">
+                                Número de personas
+                            </label>
+
+                            <select id="personas" class="campo" required>
+                                <option value="">Seleccionar cantidad</option>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 personas</option>
+                                <option value="3">3 personas</option>
+                                <option value="4">4 personas</option>
+                                <option value="5">5 personas</option>
+                                <option value="6">6 personas</option>
+                                <option value="7">7 personas</option>
+                                <option value="8">8 personas</option>
+                            </select>
+                        </div>
+
+
+                        <!-- Solicitudes -->
+                        <div>
+                            <label for="mensaje"
+                                   class="block text-sm font-semibold mb-2">
+                                Solicitudes especiales (opcional o es alergico a cierto tipo de comdida)
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                rows="3"
+                                class="campo resize-y"
+                                placeholder="¿Alguna solicitud especial?"
+                            ></textarea>
+                        </div>
+
+
+                        <!-- Botón -->
+                        <button
+                            type="submit"
+                        class="btn border-2 inline-block mt-6 px-6 py-3 
+                    text-sm 
+                    transition-all duration-300
+                    hover:-translate-y-1"
+                >
+                Confirmar reserva
+                </button>
+
+                        <p class="text-xs text-center"
+                           style="color: #F6F1E5;">
+                            La solicitud será confirmada cuando el
+                            restaurante verifique la disponibilidad.
+                        </p>
+
+                    </form>
+
+
+                    <!-- CONFIRMACIÓN -->
+                    <div id="confirmacion"
+                         class="hidden mt-6 p-5 border border-[#4a923a] bg-[#eff8ed]">
+
+                        <h3 class="text-2xl font-bold mb-3"
+                            style="font-family: var(--font-display);">
+                            Solicitud registrada
+                        </h3>
+
+                        <p class="text-sm mb-4">
+                            Estos son los datos de tu solicitud:
+                        </p>
+
+                        <div id="resumen" class="text-sm space-y-2"></div>
+
+                        <button
+                            type="button"
+                            id="nuevaReserva"
+                            class="mt-5 underline text-sm font-semibold"
+                            style="color: #386d2c;">
+                            Realizar otra reserva
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    
+
+<footer class="w-full bg-[#470B0E] text-rich-mahogany-800">
+
+    <!-- Línea decorativa superior -->
+    <div class="w-full h-5 overflow-hidden">
+        <img 
+            src="../Img/patron_verde.jpg" 
+            alt=""
+            class="w-full h-full object-cover"
+        >
+    </div>
+
+    <!-- Contenido del footer -->
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+            <!-- Logo y marca -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-left">
+
+                <div class="flex items-center gap-4">
+                    <img 
+                        src="../Img/Logo.png" 
+                        alt="Logo del restaurante"
+                        class="w-28 h-28 object-contain"
+                    >
+
+                    <div>
+                        <h2 class="font-display text-4xl font-bold text-[#F6F1E5]">
+                            Cormal De Casa
+                        </h2>
+
+                        <p class="text-sm tracking-widest uppercase text-[#F6F1E5]">
+                            Sabor mexicano
+                        </p>
+                    </div>
+                </div>
+
+                <p class="mt-4 max-w-xs text-sm leading-relaxed text-[#F6F1E5]">
+                    Disfruta del auténtico sabor mexicano,
+                    preparado con ingredientes frescos y
+                    mucho amor por nuestra tradición.
+                </p>
+            </div>
+
+            <!-- Navegación -->
+            <div class="text-center md:text-left text-[#F6F1E5]">
+
+                <h3 class="font-display text-2xl font-bold mb-5 text-[#F6F1E5]">
+                    Explora
+                </h3>
+
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <a href="index.html" class="hover:text-black-forest-800 transition-colors">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#menu" class="hover:text-black-forest-800 transition-colors">
+                            Nuestro menú
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#especiales" class="hover:text-black-forest-800 transition-colors">
+                            Especiales y novedades
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#reservas" class="hover:text-black-forest-800 transition-colors">
+                            Reservaciones
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="text-center md:text-left text-white">
+
+                <h3 class="font-display text-2xl font-bold mb-5 text-[#F6F1E5]">
+                    Contáctanos
+                </h3>
+
+                <ul class="space-y-4 text-sm text-[#F6F1E5]">
+
+                    <li class="flex items-center justify-center md:justify-start gap-3">
+                        <span class="text-black-forest-800">✉</span>
+                        contacto@cormaldecasa.com
+                    </li>
+
+                    <li class="flex items-center justify-center md:justify-start gap-3">
+                        <span class="text-black-forest-800">☎</span>
+                        +57 300 000 0000
+                    </li>
+
+                    <li class="flex items-center justify-center md:justify-start gap-3">
+                        <span class="text-black-forest-800">⌖</span>
+                        Medellín, Colombia
+                    </li>
+
+                </ul>
+
+                <a 
+                    
+                    href="#especiales"
+                    class="btn border-2 inline-block mt-6 px-6 py-3 
+                    text-sm 
+                    transition-all duration-300
+                    hover:-translate-y-1"
+                >
+                    Ver novedades
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Separador inferior -->
+        <div class="border-t border-[#F6F1E5]/20 mt-12 pt-6">
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+                <p class="text-xs text-[#F6F1E5] text-center">
+                    © 2026 Cormal De Casa. Todos los derechos reservados.
+                </p>
+
+                <p class="text-xs text-[#F6F1E5] font-semibold">
+                    Hecho con sabor mexicano 🌮
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        const formulario = document.getElementById("formReserva");
+
+        const confirmacion = document.getElementById("confirmacion");
+
+        const resumen = document.getElementById("resumen");
+
+        const fecha = document.getElementById("fecha");
+
+
+        // Evitar seleccionar fechas anteriores a hoy
+        const hoy = new Date();
+
+        const fechaLocal = new Date(
+            hoy.getTime() - hoy.getTimezoneOffset() * 60000
+        ).toISOString().split("T")[0];
+
+        fecha.min = fechaLocal;
+
+
+        // Procesar el formulario
+        formulario.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const nombre = document.getElementById("nombre").value;
+            const correo = document.getElementById("correo").value;
+            const telefono = document.getElementById("telefono").value;
+            const hora = document.getElementById("hora").value;
+            const personas = document.getElementById("personas").value;
+            const mensaje = document.getElementById("mensaje").value;
+
+            const fechaSeleccionada = new Date(
+                fecha.value + "T00:00:00"
+            );
+
+            const fechaTexto = fechaSeleccionada.toLocaleDateString(
+                "es-CO",
+                {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric"
+                }
+            );
+
+
+            // Crear resumen de la reserva
+            const datos = [
+                ["Nombre", nombre],
+                ["Correo", correo],
+                ["Teléfono", telefono],
+                ["Fecha", fechaTexto],
+                ["Hora", hora],
+                ["Personas", personas],
+                ["Solicitudes", mensaje || "Ninguna"]
+            ];
+
+
+            // Mostrar información
+            resumen.replaceChildren();
+
+            datos.forEach(function(dato) {
+
+                const linea = document.createElement("p");
+
+                const etiqueta = document.createElement("strong");
+                etiqueta.textContent = dato[0] + ": ";
+
+                linea.appendChild(etiqueta);
+                linea.appendChild(
+                    document.createTextNode(dato[1])
+                );
+
+                resumen.appendChild(linea);
+
+            });
+
+
+            // Ocultar formulario y mostrar confirmación
+            formulario.classList.add("hidden");
+
+            confirmacion.classList.remove("hidden");
+
+        });
+
+
+        // Permitir realizar otra reserva
+        document.getElementById("nuevaReserva").addEventListener(
+            "click",
+            function() {
+
+                formulario.reset();
+
+                confirmacion.classList.add("hidden");
+
+                formulario.classList.remove("hidden");
+
+            }
+        );
+            
+
+
+        
+
+    // Obtener elementos de la animación
+    const intro = document.getElementById("intro");
+    const taco = document.getElementById("taco");
+    const explosion = document.getElementById("explosion");
+    const introText = document.getElementById("introText");
+
+    // Obtener las partículas
+    const particulas = explosion.querySelectorAll("span");
+
+    // Direcciones de las partículas
+    const direcciones = [
+        [-120, -100],
+        [120, -100],
+        [-150, 20],
+        [150, 20],
+        [-100, 130],
+        [100, 130],
+        [0, -150],
+        [0, 150]
+    ];
+
+    // Asignar movimiento a cada partícula
+    particulas.forEach(function(particula, i) {
+        particula.style.setProperty("--x", direcciones[i][0] + "px");
+        particula.style.setProperty("--y", direcciones[i][1] + "px");
+        particula.style.left = "-17px";
+        particula.style.top = "-17px";
+        particula.style.animationDelay = (i * 0.025) + "s";
+    });
+
+    // Detectar preferencia de movimiento reducido
+    const movimientoReducido = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (movimientoReducido) {
+        intro.style.display = "none";
+        document.body.classList.add("mostrar-pagina");
+    } else {
+
+        // El taco comienza a temblar
+        setTimeout(function() {
+            taco.classList.add("temblar");
+        }, 1000);
+
+        // Comienza la explosión
+        setTimeout(function() {
+            taco.style.display = "none";
+            introText.style.display = "none";
+            explosion.style.display = "block";
+        }, 1800);
+
+        // Mostrar la página después de la explosión
+        setTimeout(function() {
+            intro.style.opacity = "0";
+            document.body.classList.add("mostrar-pagina");
+
+            setTimeout(function() {
+                intro.style.display = "none";
+            }, 500);
+
+        }, 2700);
+    }
+
+
+    </script>
+
+</body>
+</html>
