@@ -1,9 +1,73 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark-mode, .dark-mode *));
+
+#hotbarModal .border-champagne-mist-400 { border-color: var(--color-deep-navy-400); }
+#hotbarModal .text-champagne-mist-100   { color: var(--color-deep-navy-100); }
+
+/* ===== MODO OSCURO ===== */
+body, header, main, section, aside, footer {
+  transition: background-color .3s ease, color .3s ease;
+}
+
+/* Body y header (navy oscuro) */
+body.dark-mode {
+  background-color: var(--color-deep-navy-950) !important;
+  color: var(--color-deep-navy-50) !important;
+}
+body.dark-mode header {
+  background-color: var(--color-deep-navy-900) !important;
+  color: #fff;
+}
+
+/* champagne-mist → deep-navy oscuro */
+body.dark-mode main.bg-champagne-mist-100,
+body.dark-mode section.bg-champagne-mist-100,
+body.dark-mode section.bg-champagne-mist-50 {
+  background-color: var(--color-deep-navy-950) !important;
+}
+body.dark-mode div.bg-champagne-mist-50 {
+  background-color: var(--color-deep-navy-900) !important;
+}
+body.dark-mode aside.bg-rich-mahogany-800 { color: var(--color-deep-navy-100); }
+body.dark-mode .text-champagne-mist-50  { color: var(--color-deep-navy-50); }
+body.dark-mode .text-champagne-mist-400 { color: var(--color-deep-navy-200); }
+
+/* Rich-mahogany: más claro (800 → 700) */
+body.dark-mode aside.bg-rich-mahogany-800,
+body.dark-mode article.bg-rich-mahogany-800,
+body.dark-mode footer.bg-rich-mahogany-800,
+body.dark-mode #toggleDarkMode {
+  background-color: var(--color-rich-mahogany-700) !important;
+}
+body.dark-mode button.bg-rich-mahogany-800 {
+  background-color: var(--color-rich-mahogany-700);
+  color: #fff;
+}
+body.dark-mode button.bg-rich-mahogany-800:hover {
+  background-color: var(--color-rich-mahogany-600);
+}
+
+/* Black-forest: más claro (800 → 700) */
+body.dark-mode section.bg-black-forest-800,
+body.dark-mode article.bg-black-forest-800,
+body.dark-mode div.bg-black-forest-800 {
+  background-color: var(--color-black-forest-700) !important;
+}
+
+/* Cambio color textos */
+body.dark-mode header p.text-rich-mahogany-600 { color: var(--color-rich-mahogany-400); }
+body.dark-mode h2.text-rich-mahogany-800       { color: var(--color-rich-mahogany-300); }
+body.dark-mode footer .text-black-forest-800,
+body.dark-mode footer .hover\:text-black-forest-800:hover {
+  color: var(--color-black-forest-300);
+}
+
 @theme {
     --font-display: "Cormorant Garamond", Georgia, serif;
     --font-body: "Plus Jakarta Sans", system-ui, sans-serif;
-
+    --breakpoint-nav: 1100px;
+    /* ...el resto de tu @theme igual */
     --text-tl-tj: clamp(3rem, 8vw, 6rem);
  
     --color-rich-mahogany-50: #fce9ea;
@@ -74,8 +138,8 @@
   }
 
   .btn-nav {
-    @apply m-2 font-body text-2xl hover:text-green-600 hover:underline underline-offset-2 decoration-2 
-            hover:scale-110;
+    @apply m-2 font-body text-2xl whitespace-nowrap hover:text-green-600 hover:underline underline-offset-2 decoration-2
+          hover:scale-110;
   }
 
   .btn-menu {
@@ -146,37 +210,36 @@
 }
 
 .campo {
-        width: 100%;
-        padding: 0.75rem 1rem;
-        border-radius: 0.5rem;
-        background-color: #533E3A; /* Tono armónico con tu diseño */
-        border: 1px solid #f6be6f;
-        color: #F6F1E5;
-        outline: none;
-        transition: border-color 0.3s;
-    }
-    .campo:focus {
-        border-color: #ffeb33;
-    }
-    .campo::placeholder {
-        color: #d1c7bd;
-    }
-    
-    .talavera {
-        width: 100%;
-        height: 1rem;
-        background-image: url('../Img/patron_verde.jpg');
-        background-size: cover;
-    }
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #533E3A;
+    border: 1px solid #f6be6f;
+    color: #F6F1E5;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.campo:focus {
+    border-color: #ffeb33;
+}
+.campo::placeholder {
+    color: #d1c7bd;
+}
 
-    .boton-reservar {
-        background-color: #ffeb33;
-        color: #470B0E;
-        font-weight: bold;
-        transition: background-color 0.3s, transform 0.2s;
-    }
-    .boton-reservar:hover {
-        background-color: #ffe500;
-        transform: translateY(-2px);
-    }
+.talavera {
+    width: 100%;
+    height: 1rem;
+    background-image: url('../Img/patron_verde.jpg');
+    background-size: cover;
+}
+.boton-reservar {
+    background-color: #ffeb33;
+    color: #470B0E;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.boton-reservar:hover {
+    background-color: #ffe500;
+    transform: translateY(-2px);
+}
  

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es">
-  <head>
+  <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -8,51 +8,59 @@
     <title>Mi Página Web</title>
   </head>
 
-  <body class="bg-v font-body text-black">
+  <body class="bg-v font-body text-black ">
 
-    <header class="bg-white">
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-2">
+  
+      <button id="toggleDarkMode" class="bg-rich-mahogany-800 text-champagne-mist-100 p-3 rounded-full shadow-lg hover:scale-110 transition-transform flex items-center justify-center text-xl" title="Cambiar modo nocturno">
+    🌙
+      </button>
 
-      <section class="flex flex-row justify-around">
+    </div>
 
-        <div class="flex flex-row align-center">
 
-          <img class="w-25" src="Img/Logo.png" alt="Logo">
 
-          <div class="flex flex-col align-middle justify-center">
-          <h2 class="text-2xl font-display">Comal de casa</h2>
-          <p class="text-rich-mahogany-600 font-body">El sabor de mexico</p>
+    <header class="bg-white relative">
 
-          </div>
+  <section class="flex flex-wrap items-center justify-between px-4 nav:flex-nowrap nav:justify-around nav:px-0">
 
-        </div>
+    <!-- Logo -->
+    <div class="flex flex-row align-center shrink-0">
+      <img class="w-25" src="Img/Logo.png" alt="Logo">
+      <div class="flex flex-col align-middle justify-center">
+        <h2 class="text-2xl font-display whitespace-nowrap">Comal de casa</h2>
+        <p class="text-rich-mahogany-600 font-body whitespace-nowrap">El sabor de mexico</p>
+      </div>
+    </div>
 
-        <div class="m-3 mt-6">
+    <!-- Botón hamburguesa -->
+    <button id="menuToggle" type="button"
+            class="nav:hidden p-2 text-4xl leading-none"
+            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      ☰
+    </button>
 
-          <nav class="flex flex-row">
+    <!-- Nav + botón -->
+    <div id="menuPrincipal"
+         class="flex max-nav:hidden w-full flex-col items-center pb-4 nav:w-auto nav:flex-row nav:pb-0">
 
-            <a class="btn-nav" href="#">Inicio</a>
+      <nav class="flex flex-col items-center nav:m-3 nav:mt-6 nav:flex-row">
+        <a class="btn-nav" href="index.html">Inicio</a>
+        <a class="btn-nav" href="index.html#menu">Carta</a>
+        <a class="btn-nav" href="paginas/nosotros.html">Nosotros</a>
+        <a class="btn-nav" href="#">Contactanos</a>
+        <a class="btn-nav" href="#">Membresia</a>
+      </nav>
 
-            <a class="btn-nav" href="#">Carta</a>
-            
-            <a class="btn-nav" href="paginas/nosotros.html">Nosotros</a>
-            
-            <a class="btn-nav" href="#">Contactanos</a>
-            
-            <a class="btn-nav" href="#">Membresia</a>
+      <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 whitespace-nowrap hover:bg-rich-mahogany-800/90 nav:mt-5">
+        <a href="">Pedir domicilio</a>
+      </button>
 
-          </nav>
+    </div>
 
-        </div>
+  </section>
 
-        <div>
-
-          <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 mt-5 hover:bg-rich-mahogany-800/90"><a href="">Pedir domicilio</a></button>
-
-        </div>
-
-      </section>
-
-    </header>
+</header> 
 
     
 
@@ -242,7 +250,7 @@
                 <img src="./Img/reservas.jpg" alt="Icono de reservas" class="mx-auto mb-4 rounded-2xl h-40 ">
                 <h2 class="font-display text-2xl font-bold text-rich-mahogany-800">Reservas</h2>
                 
-                <button class="bg-rich-mahogany-800 text-white font-display py-2 px-4 mt-4 rounded-2xl text-xl hover:bg-rich-mahogany-800/90">Hacer reserva</button>
+                <button class="bg-rich-mahogany-800 text-white font-display py-2 px-4 mt-4 rounded-2xl text-xl hover:bg-rich-mahogany-800/90"><a href="paginas/reservas.html">Hacer reserva</a></button>
               </div>
 
             </div>
@@ -399,107 +407,6 @@
 
     </footer>
 
-    <script>
-      // =====================================================
-      // 1) LOS DATOS: una categoría por cada { }.
-      //    "enlace" es la página a la que lleva la tarjeta.
-      //    Por ahora todas tienen "#" (no llevan a ningún lado).
-      //    >>> PENDIENTE: cuando crees cada página, cambia el "#"
-      //        por su nombre, por ejemplo "entradas.html".
-      // =====================================================
-      const categorias = [
-        {
-          nombre: "Entradas",
-          imagen: "Img/prueda.png",
-          descripcion: "Bocados ligeros para abrir el apetito, preparados con ingredientes frescos y sabor casero.",
-          enlace: "#" // PENDIENTE: página de Entradas
-        },
-        {
-          nombre: "Platos principales",
-          imagen: "Img/prueda.png",
-          descripcion: "Recetas ancestrales servidas en porciones generosas, ideales para compartir en familia.",
-          enlace: "#" // PENDIENTE: página de Platos principales
-        },
-        {
-          nombre: "Postres",
-          imagen: "Img/prueda.png",
-          descripcion: "Dulces caseros para cerrar la comida con un final suave y delicioso.",
-          enlace: "#" // PENDIENTE: página de Postres
-        },
-        {
-          nombre: "Bebidas",
-          imagen: "Img/prueda.png",
-          descripcion: "Jugos naturales, café y refrescos para acompañar cada plato de tu mesa.",
-          enlace: "#" // PENDIENTE: página de Bebidas
-        },
-        {
-          nombre: "Cócteles y licores",
-          imagen: "Img/prueda.png",
-          descripcion: "Mezclas de la casa y licores selectos para brindar en buena compañía.",
-          enlace: "#" // PENDIENTE: página de Cócteles y licores
-        },
-        {
-          nombre: "Especialidades",
-          imagen: "Img/prueda.png",
-          descripcion: "Los platos insignia de la casa, recomendados por nuestros cocineros.",
-          enlace: "#" // PENDIENTE: página de Especialidades
-        }
-      ];
-
-      // 2) DÓNDE SE DIBUJA: buscamos el contenedor vacío del HTML por su id.
-      const contenedorTarjetas = document.getElementById("categorias");
-
-      // 3) DIBUJAR: por cada categoría creamos una tarjeta.
-      //    Toda la tarjeta es un enlace (<a>) hacia su propia página.
-      categorias.forEach(function (categoria) {
-        contenedorTarjetas.innerHTML += `
-          <a href="${categoria.enlace}" class="tarjeta group block h-44 perspective-distant">
-
-            <!-- "interior" es la pieza que gira -->
-            <div class="interior relative h-full w-full transform-3d transition-transform duration-700 group-hover:rotate-y-180 group-focus-visible:rotate-y-180">
-
-              <!-- Cara de adelante: imagen + nombre -->
-              <div class="absolute inset-0 overflow-hidden rounded-lg shadow-md backface-hidden">
-                <img src="${categoria.imagen}" alt="${categoria.nombre}" class="h-full w-full object-cover">
-                <p class="absolute bottom-2 right-2 rounded-lg bg-black-forest-800 px-2 py-1 text-sm text-white">
-                  ${categoria.nombre}
-                </p>
-              </div>
-
-              <!-- Cara de atrás: explicación + "Ver más" -->
-              <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 rounded-lg bg-black-forest-800 p-3 text-center text-champagne-mist-100 shadow-md backface-hidden rotate-y-180">
-              <p class="text-sm">${categoria.descripcion}</p>
-              <span class="btn text-sm! p-2!">Ver más</span>
-              </div>
-
-            </div>
-          </a>
-        `;
-      });
-
-      // 4) CELULAR: en pantallas táctiles no existe "hover".
-      //    Primer toque = gira la tarjeta. Segundo toque = entra a la página.
-      const tarjetas = document.querySelectorAll(".tarjeta");
-
-      tarjetas.forEach(function (tarjeta) {
-        tarjeta.addEventListener("click", function (evento) {
-          const esTactil = window.matchMedia("(hover: none)").matches;
-          const interior = tarjeta.querySelector(".interior");
-          const yaGirada = interior.classList.contains("rotate-y-180");
-
-          if (esTactil && !yaGirada) {
-            evento.preventDefault();                // no sigas el enlace todavía
-            interior.classList.add("rotate-y-180"); // solo gira la tarjeta
-          }
-        });
-      });
-
-      // =====================================================
-      // 5) ESPACIO PARA CÓDIGO FUTURO
-      // =====================================================
-
-
-
-    </script>
+   <script src="src/temas.js"></script>
   </body>
 </html>
