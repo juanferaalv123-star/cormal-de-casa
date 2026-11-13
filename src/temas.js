@@ -34,27 +34,3 @@
   });
 })();
 
-(function () {
-  const toggle = document.getElementById("menuToggle");
-  const menu = document.getElementById("menuPrincipal");
-  if (!toggle || !menu) return;
-
-  function setMenu(abierto) {
-    menu.classList.toggle("max-nav:hidden", !abierto);
-    toggle.setAttribute("aria-expanded", abierto);
-    toggle.setAttribute("aria-label", abierto ? "Cerrar menú" : "Abrir menú");
-    toggle.textContent = abierto ? "✕" : "☰";
-  }
-
-  toggle.addEventListener("click", () => {
-    setMenu(menu.classList.contains("max-nav:hidden"));
-  });
-
-  // Se cierra al tocar un enlace o al presionar Escape
-  menu.querySelectorAll("a").forEach((a) =>
-    a.addEventListener("click", () => setMenu(false))
-  );
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") setMenu(false);
-  });
-})();
