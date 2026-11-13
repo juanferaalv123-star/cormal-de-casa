@@ -243,3 +243,202 @@ body.dark-mode footer .hover\:text-black-forest-800:hover {
     transform: translateY(-2px);
 }
  
+/* =========================================================
+   COMAL VIP
+   Pega este bloque AL FINAL de src/input.css.
+   No repitas @import "tailwindcss"; si ya está al inicio.
+   ========================================================= */
+
+.vip-section {
+  padding: 5rem 1.25rem;
+  background: #f8d3d5;
+  color: #1f0507;
+}
+
+.vip-container {
+  width: min(100%, 1100px);
+  margin-inline: auto;
+}
+
+.vip-heading {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  text-align: center;
+}
+
+.vip-eyebrow {
+  color: #8d1720;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.vip-title {
+  margin: .6rem 0;
+  color: #5b1017;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+.vip-button,
+.vip-secondary {
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 999px;
+  padding: .85rem 1.4rem;
+  background: #5b1017;
+  color: #fff8ed;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .2s, background .2s;
+}
+
+.vip-button:hover,
+.vip-secondary:hover {
+  background: #8d1720;
+  transform: translateY(-2px);
+}
+
+.vip-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(240px, .8fr);
+  gap: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid #e7aeb2;
+  border-radius: 1.25rem;
+  background: #fffaf1;
+  box-shadow: 0 15px 40px #1f050712;
+}
+
+.vip-card[hidden],
+.vip-orders[hidden] {
+  display: none;
+}
+
+.vip-form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.vip-field {
+  min-width: 0;
+  border: 0;
+  padding: 0;
+}
+
+.vip-field legend,
+.vip-field > label {
+  display: block;
+  margin-bottom: .7rem;
+  color: #5b1017;
+  font-weight: 700;
+}
+
+.vip-field input[type="text"] {
+  width: 100%;
+  border: 1px solid #d9b8a6;
+  border-radius: .6rem;
+  padding: .75rem;
+  background: white;
+}
+
+.vip-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: .55rem;
+}
+
+.vip-options label {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .65rem;
+  border: 1px solid #ead9c8;
+  border-radius: .6rem;
+  background: #fff;
+  font-size: .9rem;
+}
+
+.vip-options label span {
+  margin-left: auto;
+  color: #8d1720;
+  font-size: .8rem;
+}
+
+.vip-summary {
+  align-self: start;
+  position: sticky;
+  top: 1rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: #f8e9d8;
+}
+
+.vip-summary h3,
+.vip-orders h3 {
+  margin: 0 0 .75rem;
+  color: #5b1017;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.vip-total {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+}
+
+.vip-total strong {
+  display: block;
+  color: #8d1720;
+  font-size: 1.6rem;
+}
+
+.vip-message {
+  min-height: 1.5rem;
+  color: #28613a;
+  font-size: .9rem;
+}
+
+.vip-disclaimer {
+  color: #665b55;
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.vip-orders {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: #fffaf1;
+}
+
+.vip-orders li {
+  margin: .5rem 0;
+  overflow-wrap: anywhere;
+}
+
+.vip-secondary {
+  background: #6b625c;
+}
+
+@media (max-width: 760px) {
+  .vip-card {
+    grid-template-columns: 1fr;
+  }
+
+  .vip-summary {
+    position: static;
+  }
+}
+
+  .vip-option input {
+    @apply accent-rich-mahogany-800;
+  }
+
+  #vipConfigurator[hidden],
+#vipOrders[hidden] {
+  display: none;
+}
