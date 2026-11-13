@@ -20,7 +20,7 @@
      Ruta de un archivo de tu proyecto (ej. "Img/mi-anuncio.jpg")
      o una URL completa (https://...).
      ============================================================ */
-  const IMAGEN_FINAL = "./Img/AnuncioFinal.png";
+  const IMAGEN_FINAL = "../Img/AnuncioFinal.png";
   const TEXTO_ALT_FINAL = "Anuncio de Comal de casa";
 
   /* Fotos de Wikimedia Commons (verifica la licencia/atribución
