@@ -3,24 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Reservaciones | Cormal De Casa</title>
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../src/input.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/output.css">
-    
+    <link rel="stylesheet" href="../src/input.css">
+    <title>Mi Página Web</title>
+  </head>
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    
-</head>
-
-<body class="bg-champagne-mist-100">
+<body class=" bg-champagne-mist-100 bg-v font-body text-black">
 
     
     <!-- ANIMACIÓN DE BIENVENIDA -->
@@ -48,33 +37,47 @@
 
 
     <!-- ENCABEZADO -->
-    <header class="bg-[#470B0E] text-[#F6F1E5] px-6 py-5">
+    <header class="bg-white relative">
 
-        <nav class="max-w-6xl mx-auto flex justify-between items-center">
+  <section class="flex flex-wrap items-center justify-between px-4 nav:flex-nowrap nav:justify-around nav:px-0">
 
-            <a href="index.html"
-               class="text-2xl font-bold"
-               style="font-family: var(--font-display);">
-                Cormal De Casa
-            </a>
+    <!-- Logo -->
+    <div class="flex flex-row align-center shrink-0">
+      <img class="w-25" src="../Img/Logo.png" alt="Logo">
+      <div class="flex flex-col align-middle justify-center">
+        <h2 class="text-2xl font-display whitespace-nowrap">Comal de casa</h2>
+        <p class="text-rich-mahogany-600 font-body whitespace-nowrap">El sabor de mexico</p>
+      </div>
+    </div>
 
-            <div class="flex gap-6 items-center text-sm">
-                <a href="index.html" class="hover:text-green-300">
-                    Inicio
-                </a>
+    <!-- Botón hamburguesa -->
+    <button id="menuToggle" type="button"
+            class="nav:hidden p-2 text-4xl leading-none"
+            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      ☰
+    </button>
 
-                <a href="menu.html" class="hover:text-green-300">
-                    Carta
-                </a>
+    <!-- Nav + botón -->
+    <div id="menuPrincipal"
+         class="flex max-nav:hidden w-full flex-col items-center pb-4 nav:w-auto nav:flex-row nav:pb-0">
 
-                <a href="reservas.html"
-                   class="text-green-200 font-semibold">
-                    Reservar
-                </a>
-            </div>
+      <nav class="flex flex-col items-center nav:m-3 nav:mt-6 nav:flex-row">
+        <a class="btn-nav" href="../index.html">Inicio</a>
+        <a class="btn-nav" href="../index.html#menu">Carta</a>
+        <a class="btn-nav" href="nosotros.html">Nosotros</a>
+        <a class="btn-nav" href="#">Contactanos</a>
+        <a class="btn-nav" href="#">Membresia</a>
+      </nav>
 
-        </nav>
-    </header>
+      <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 whitespace-nowrap hover:bg-rich-mahogany-800/90 nav:mt-5">
+        <a href="">Pedir domicilio</a>
+      </button>
+
+    </div>
+
+  </section>
+
+</header> 
 
     <div class="w-full h-5 overflow-hidden">
         <img 
@@ -88,7 +91,7 @@
    
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main class="max-w-6xl mx-auto px-6 py-16 ">
+    <main class=" max-w-6xl mx-auto px-6 py-16 ">
 
         <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
@@ -100,11 +103,11 @@
                     TU MESA TE ESPERA
                 </p>
 
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                <h1 class=" font-display text-5xl md:text-6xl font-bold leading-tight mb-6">
                     Una mesa preparada para ti.
                 </h1>
 
-                <p class="text-base leading-relaxed mb-10"
+                <p class=" font-body text-base leading-relaxed mb-10"
                    style="color: #603a06;">
                     Reserva tu lugar y disfruta de una cocina
                     que celebra los ingredientes, las técnicas
@@ -656,6 +659,7 @@
 
 
     </script>
+    <script src="../src/temas.js"></script>
 
 </body>
 </html>

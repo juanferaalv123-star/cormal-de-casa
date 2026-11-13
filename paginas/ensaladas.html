@@ -27,49 +27,47 @@
     <path d="m9 12 2 2 4-4"/>
   </symbol>
 </svg>
-    <header class="bg-white">
+    <header class="bg-white relative">
 
-      <section class="flex flex-row justify-around">
+  <section class="flex flex-wrap items-center justify-between px-4 nav:flex-nowrap nav:justify-around nav:px-0">
 
-        <div class="flex flex-row align-center">
+    <!-- Logo -->
+    <div class="flex flex-row align-center shrink-0">
+      <img class="w-25" src="Img/Logo.png" alt="Logo">
+      <div class="flex flex-col align-middle justify-center">
+        <h2 class="text-2xl font-display whitespace-nowrap">Comal de casa</h2>
+        <p class="text-rich-mahogany-600 font-body whitespace-nowrap">El sabor de mexico</p>
+      </div>
+    </div>
 
-          <img class="w-25" src="../Img/Logo.png" alt="Logo">
+    <!-- Botón hamburguesa -->
+    <button id="menuToggle" type="button"
+            class="nav:hidden p-2 text-4xl leading-none"
+            aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+      ☰
+    </button>
 
-          <div class="flex flex-col align-middle justify-center">
-          <h2 class="text-2xl font-display">Comal de casa</h2>
-          <p class="text-rich-mahogany-600 font-body">El sabor de mexico</p>
+    <!-- Nav + botón -->
+    <div id="menuPrincipal"
+         class="flex max-nav:hidden w-full flex-col items-center pb-4 nav:w-auto nav:flex-row nav:pb-0">
 
-          </div>
+      <nav class="flex flex-col items-center nav:m-3 nav:mt-6 nav:flex-row">
+        <a class="btn-nav" href="../index.html">Inicio</a>
+        <a class="btn-nav" href="../index.html#menu">Carta</a>
+        <a class="btn-nav" href="nosotros.html">Nosotros</a>
+        <a class="btn-nav" href="#">Contactanos</a>
+        <a class="btn-nav" href="#">Membresia</a>
+      </nav>
 
-        </div>
+      <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 whitespace-nowrap hover:bg-rich-mahogany-800/90 nav:mt-5">
+        <a href="">Pedir domicilio</a>
+      </button>
 
-        <div class="m-3 mt-6">
+    </div>
 
-          <nav class="flex flex-row">
+  </section>
 
-            <a class="btn-nav" href="../index.html">Inicio</a>
-
-            <a class="btn-nav" href="../index.html#menu">Carta</a>
-            
-            <a class="btn-nav" href="#">Nosotros</a>
-            
-            <a class="btn-nav" href="#">Contactanos</a>
-            
-            <a class="btn-nav" href="#">Membresia</a>
-
-          </nav>
-
-        </div>
-
-        <div>
-
-          <button class="bg-rich-mahogany-800 p-4 rounded-2xl text-white font-body m-3 mt-5 hover:bg-rich-mahogany-800/90"><a href="">Pedir domicilio</a></button>
-
-        </div>
-
-      </section>
-
-    </header>
+</header> 
     <main class="pb-16">
 
       <section class="relative flex min-h-[calc(100vh-5rem)] w-full items-end justify-start">
@@ -403,6 +401,6 @@
       </div>
 
     </footer>
-    
+  <script src="../src/temas.js"></script>  
 </body>
 </html>
